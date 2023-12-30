@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -162,4 +168,57 @@ a {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background-color: #1159b8;
+}
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.button--secondary:hover {
+  background-color: #09a1bc;
+}
+
+.button--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.button--accent:hover {
+  background-color: #ff592f;
+}
+
+/* Inline buttons */
+.button--block {
+  width: 100%;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
 }
